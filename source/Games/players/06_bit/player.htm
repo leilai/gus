@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+		<title>WebPlayer | スターバイター</title>
+		<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
+		<script type="text/javascript">
+			function GetUnity() {
+				if (typeof unityObject != "undefined") {
+					return unityObject.getObjectById("unityPlayer");
+				}
+				return null;
+			}
+			if (typeof unityObject != "undefined") {
+				var params = {
+					disableContextMenu: true
+				};
+				unityObject.embedUnity("unityPlayer", "WebPlayer.unity3d", 480, 640, params);
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<style type="text/css">
+			div#unityPlayer {
+				width: 480px;
+				height: 640px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="whole">
+			<h1>スターバイター</h1>
+
+			<div id="unityPlayer">
+				<h2>WebPlayer</h2>
+				<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!" class="missing">
+					<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+				</a>
+			</div>
+
+			<div id="instruction">
+				<div class="inner">
+					<h2>操作説明</h2>
+					<p>
+						誘導レーザーで敵を撃破せよ！
+					</p>
+					<dl>
+						<dt>マウス</dt>
+						<dd>旋回</dd>
+						<dt>左クリック</dt>
+						<dd>ショット</dd>
+						<dt>左ボタン押しっぱなし</dt>
+						<dd>索敵レーザー</dd>
+						<dt>左ボタンを離す</dt>
+						<dd>誘導レーザー</dd>
+					</dl>
+					<ol>
+						<li>左ボタン押しっぱなしで索敵レーザー発射</li>
+						<li>索敵レーザーを重ねて敵をロックオン</li>
+						<li>左ボタンを離して誘導レーザー発射</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

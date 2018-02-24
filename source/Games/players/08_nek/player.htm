@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+		<title>WebPlayer | （株）ねこ&lt;del&gt;商事&lt;/del&gt;障子</title>
+		<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
+		<script type="text/javascript">
+			function GetUnity() {
+				if (typeof unityObject != "undefined") {
+					return unityObject.getObjectById("unityPlayer");
+				}
+				return null;
+			}
+			if (typeof unityObject != "undefined") {
+				var params = {
+					disableContextMenu: true
+				};
+				unityObject.embedUnity("unityPlayer", "WebPlayer.unity3d", 640, 480, params);
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<style type="text/css">
+			div#unityPlayer {
+				width: 640px;
+				height: 480px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="whole">
+			<h1>（株）ねこ<del>商事</del>障子</h1>
+
+			<div id="unityPlayer">
+				<h2>WebPlayer</h2>
+				<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!" class="missing">
+					<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+				</a>
+			</div>
+
+			<div id="instruction">
+				<div class="inner">
+					<h2>操作説明</h2>
+					<p>
+						ジャンプで障子紙をつき破ろう！
+					</p>
+					<dl>
+						<dt>左シフトキー</dt>
+						<dd>走り始める</dd>
+						<dt>カーソルキー左右</dt>
+						<dd>移動</dd>
+						<dt>スペースキー</dt>
+						<dd>ジャンプ</dd>
+					</dl>
+					<p>
+						スペースキーを押す長さで、ジャンプの高さをコントロールできます
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

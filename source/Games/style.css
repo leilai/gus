@@ -1,0 +1,267 @@
+
+/* 全体のレイアウト */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	overflow-y: scroll;  /* スクロールバー常時表示 */
+}
+
+body {
+	font: 11pt/1.45 "Helvetica Neue", Arial, "メイリオ", Meiryo, Sans-Serif;
+}
+
+div#whole {
+	position: relative;
+	width: 800px;
+	height: 800px;
+	margin: 10px auto;
+	background: url( images/background.jpg ) no-repeat;
+}
+
+
+/* 見出しタグ調整 */
+
+h1 {
+	display: block;
+	position: absolute;
+	left: 241px;
+	top: 150px;
+	width: 319px;
+	height: 319px;
+	background: url( images/stamp.png ) no-repeat;
+}
+h1 span {
+	display: none;
+}
+
+h2 {
+	display: inline;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+h3 {
+	display: inline;
+	margin-left: 0.7em;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+
+/* ゲーム説明領域 */
+
+div.description {
+	display: none;
+	position: absolute;
+	left: 52px;
+	top: 595px;
+	width: 644px;
+	height: 140px;
+	padding: 25px;
+	background: url( images/frame.png ) no-repeat;
+}
+
+div#desc_info {
+	display: block;
+	text-align: center;
+	line-height: 140px;
+}
+
+h3 + p {
+	margin: 10px 0px 5px 7px;
+}
+
+
+/* WebPlayer へのリンク */
+
+a.link span {
+	display: none;
+}
+
+
+/* おに */
+
+a#link_oni {
+	display: block;
+	position: absolute;
+	z-index: 10;
+	left: 286px;
+	top: -20px;
+	width: 187px;
+	height: 192px;
+	background: url( images/01_oni.png ) no-repeat left center;
+}
+a#link_oni:hover {
+	z-index: 11;
+	background-position: right center;
+}
+
+
+/* ぷちパズル */
+
+a#link_puz {
+	display: block;
+	position: absolute;
+	z-index: 9;
+	left: 480px;
+	top: 16px;
+	width: 152px;
+	height: 181px;
+	background: url( images/02_puz.png ) no-repeat left center;
+}
+a#link_puz:hover {
+	z-index: 11;
+	background-position: right center;
+}
+
+
+/* ダンジョン イーター */
+
+a#link_dun {
+	display: block;
+	position: absolute;
+	z-index: 8;
+	left: 559px;
+	top: 128px;
+	width: 259px;
+	height: 220px;
+	background: url( images/03_dun.png ) no-repeat left center;
+}
+a#link_dun:hover {
+	z-index: 11;
+	background-position: right center;
+}
+
+
+/* イン ザ ダーク ウォーター */
+
+a#link_oto {
+	display: block;
+	position: absolute;
+	z-index: 7;
+	left: 554px;
+	top: 297px;
+	width: 222px;
+	height: 171px;
+	background: url( images/04_oto.png ) no-repeat left center;
+}
+a#link_oto:hover {
+	z-index: 11;
+	background-position: right center;
+}
+
+
+/* ヘドバン ガールズ */
+
+a#link_ban {
+	display: block;
+	position: absolute;
+	z-index: 6;
+	left: 480px;
+	top: 397px;
+	width: 150px;
+	height: 200px;
+	background: url( images/05_ban.png ) no-repeat left center;
+}
+a#link_ban:hover {
+	z-index: 11;
+	background-position: right center;
+}
+
+
+/* スターバイター */
+
+a#link_bit {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	left: 282px;
+	top: 460px;
+	width: 234px;
+	height: 154px;
+	background: url( images/06_bit.png ) no-repeat left center;
+}
+a#link_bit:hover {
+	z-index: 11;
+	background-position: right center;
+}
+
+
+/* イート ザ ムーン */
+
+a#link_eat {
+	display: block;
+	position: absolute;
+	z-index: 4;
+	left: 169px;
+	top: 398px;
+	width: 172px;
+	height: 192px;
+	background: url( images/07_eat.png ) no-repeat left center;
+}
+a#link_eat:hover {
+	z-index: 11;
+	background-position: right center;
+}
+
+
+/* (株) ねこ-商事-障子 */
+
+a#link_nek {
+	display: block;
+	position: absolute;
+	z-index: 3;
+	left: 60px;
+	top: 286px;
+	width: 176px;
+	height: 179px;
+	background: url( images/08_nek.png ) no-repeat left center;
+}
+a#link_nek:hover {
+	z-index: 11;
+	background-position: right center;
+}
+
+
+/* 一画面伝説レジェンド */
+
+a#link_rpg {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	left: 36px;
+	top: 127px;
+	width: 193px;
+	height: 203px;
+	background: url( images/09_rpg.png ) no-repeat left center;
+}
+a#link_rpg:hover {
+	z-index: 11;
+	background-position: right center;
+}
+
+
+/* ナゾレバ・ハシレール (もちろん仮) */
+
+div#desc_naz h3
+{
+	font-size: 12pt;
+}
+a#link_naz {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	left: 139px;
+	top: 52px;
+	width: 202px;
+	height: 136px;
+	background: url( images/10_naz.png ) no-repeat left center;
+}
+a#link_naz:hover {
+	z-index: 11;
+	background-position: right center;
+}

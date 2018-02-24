@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\PlayerControl.cs">
+    <Files>
+      <File FileName="Assets\Script\StackBlock.cs" Line="270" Column="5" />
+      <File FileName="Assets\Script\GoalSceneControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\StackBlockControl.cs" Line="14" Column="10" />
+      <File FileName="Assets\Script\PlayerControl.cs" Line="282" Column="6" />
+      <File FileName="Assets\Script\CarryBlock.cs" Line="194" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,105 @@
+
+/* 全体のレイアウト */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	overflow-y: scroll;  /* スクロールバー常時表示 */
+}
+
+body {
+	font: 11pt/1.45 "Helvetica Neue", Arial, "メイリオ", Meiryo, Sans-Serif;
+}
+
+div#whole {
+	position: relative;
+	width: 800px;
+	margin: 10px auto;
+	padding-bottom: 25px;
+	background: url( ../images/background.jpg ) no-repeat center;
+}
+
+
+/* 見出しタグ調整 */
+
+h1 {
+	padding: 25px 0px;
+	font-size: 20pt;
+	text-align: center;
+}
+
+h2 {
+	display: none;
+}
+
+h3 {
+	margin-bottom: 3px;
+	font-size: 13pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/* WebPlayer 領域 */
+
+div#unityPlayer {
+	cursor: default;
+	margin: 0px auto 20px;
+	background-color: #ffffff;
+}
+
+div#unityPlayer a.missing {
+	display: block;
+	position: relative;
+	top: 208px;
+	width: 193px;
+	height: 63px;
+	margin: 0px auto;
+}
+
+
+/* 操作説明領域 */
+
+div#instruction {
+	position: relative;
+	width: 694px;
+	margin: 0px auto 25px;
+	background: url( ../images/frame_upper.png ) no-repeat;
+}
+
+div#instruction div.inner {
+	position: relative;
+	top: 25px;
+	padding: 0px 25px 15px 25px;
+	background: url( ../images/frame_lower.png ) no-repeat bottom;
+}
+
+div#instruction div.inner p {
+	margin-bottom: 10px;
+}
+
+div#instruction div.inner dl {
+	margin-bottom: 10px;
+}
+div#instruction div.inner dt {
+	width: 13.5em;
+	padding: 3px 0px 3px 0.5em;
+	font-weight: bold;
+	clear: left;
+	float: left;
+}
+div#instruction div.inner dd {
+	border-top: 1px solid #666666;
+	padding: 3px 0.5em 3px 14em;
+}
+div#instruction div.inner dd:last-child {
+	border-bottom: 1px solid #666666;
+}
+
+div#instruction div.inner ol {
+	list-style-position: inside;
+	margin: 0px 0px 10px 5px;
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+		<title>WebPlayer | ナゾレバ・ハシレール（もちろん仮）</title>
+		<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
+		<script type="text/javascript">
+			function GetUnity() {
+				if (typeof unityObject != "undefined") {
+					return unityObject.getObjectById("unityPlayer");
+				}
+				return null;
+			}
+			if (typeof unityObject != "undefined") {
+				var params = {
+					disableContextMenu: true
+				};
+				unityObject.embedUnity("unityPlayer", "WebPlayer.unity3d", 640, 480, params);
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<style type="text/css">
+			div#unityPlayer {
+				width: 640px;
+				height: 480px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="whole">
+			<h1>ナゾレバ・ハシレール（もちろん仮）</h1>
+
+			<div id="unityPlayer">
+				<h2>WebPlayer</h2>
+				<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!" class="missing">
+					<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+				</a>
+			</div>
+
+			<div id="instruction">
+				<div class="inner">
+					<h2>操作説明</h2>
+					<p>
+						コースを作って車で走ろう！
+					</p>
+					<h3>エディットモード</h3>
+					<dl>
+						<dt>左ドラッグ</dt>
+						<dd>線をひく</dd>
+						<dt>【無くな～る】</dt>
+						<dd>作ったコースを消す</dd>
+						<dt>【道にな～る】</dt>
+						<dd>マウスで描いた線から道路を作る</dd>
+						<dt>【車で走～る】</dt>
+						<dd>作ったコースを車で走る</dd>
+						<dt>【長いトンネ～ル】</dt>
+						<dd>トンネルを作る</dd>
+						<dt>【森があ～る】</dt>
+						<dd>木を道路わきに並べる</dd>
+						<dt>【高いビ～ル】</dt>
+						<dd>ビルを道路わきに並べる</dd>
+						<dt>【空も飛べ～る】</dt>
+						<dd>ジャンプ台を作る</dd>
+					</dl>
+					<h3>ドライブモード</h3>
+					<dl>
+						<dt>カーソルキー左右</dt>
+						<dd>ハンドル</dd>
+						<dt>カーソルキー上</dt>
+						<dd>アクセル</dd>
+						<dt>カーソルキー下</dt>
+						<dd>ブレーキ</dd>
+					</dl>
+					<ol>
+						<li>マウスで線をひきます</li>
+						<li>【道にな～る】ボタンを押す　→　コースができます</li>
+						<li>【車で走～る】ボタンを押す　→　車でコースを走れます</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

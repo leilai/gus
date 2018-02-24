@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+		<title>WebPlayer | おに</title>
+		<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
+		<script type="text/javascript">
+			function GetUnity() {
+				if (typeof unityObject != "undefined") {
+					return unityObject.getObjectById("unityPlayer");
+				}
+				return null;
+			}
+			if (typeof unityObject != "undefined") {
+				var params = {
+					disableContextMenu: true
+				};
+				unityObject.embedUnity("unityPlayer", "WebPlayer.unity3d", 600, 450, params);
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<style type="text/css">
+			div#unityPlayer {
+				width: 600px;
+				height: 450px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="whole">
+			<h1>おに</h1>
+
+			<div id="unityPlayer">
+				<h2>WebPlayer</h2>
+				<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!" class="missing">
+					<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+				</a>
+			</div>
+
+			<div id="instruction">
+				<div class="inner">
+					<h2>操作説明</h2>
+					<p>
+						「おに」を斬って走り抜けろ！
+					</p>
+					<dl>
+						<dt>左クリック</dt>
+						<dd>攻撃</dd>
+					</dl>
+					<p>
+						近くで斬るほど高得点です！
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
